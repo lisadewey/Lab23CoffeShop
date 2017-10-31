@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<style>
+	body {
+		color: brown;
+		background-color: bisque;
+		font-size: 16px;
+	}
+
+	.formboxes {
+		box-shadow: 0 0 3px rosybrown;
+		border-color: rosybrown;
+		padding: 3px;
+	}
+
+	.submitbutton {
+		color: bisque;
+		background-color: brown;
+		font-size: 16px;
+		border: none;
+		width: 100px;
+		height: 40px;
+		padding: 5px;
+	}
+
+		.submitbutton:hover {
+			background-color: darkgreen;
+			color: bisque;
+			border: 2px solid brown;
+			/*-ms-transition-duration: 0.4s;*/
+			-o-transition-duration: 0.4s;
+			-webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
+		}
+</style>
+<body>
+	<h3>Please register. You'll receive a free coffee!</h3>
+	<br>
+	<form style="width:200px;" class="form" name="Reg" onsubmit="return validateForm()" action="Success" method="post">
+		<em>Full Name:</em>
+		<input type="text" class="formboxes" name="FullName" required />
+		<br><br>
+		<em>Email:</em>
+		<input type="email" class="formboxes" name="Email" required />
+		<br><br>
+		<em>Password:</em>
+		<input type="text" class="formboxes" name="Password" required />
+		<br><br>
+		<em>Phone Number:</em>
+		<input type="number" class="formboxes" name="Phone" required />
+		<br><br />
+		<p><em>Favorite coffee bean:</em><br><p>
+			<input type="radio" name="coffee bean" value="Arabica"> Arabica<br>
+			<input type="radio" name="coffee bean" value="Robusta"> Robusta<br>
+			<input type="radio" name="coffee bean" value="other"> Other
+			<br><br>
+			<input type="submit" class="submitbutton" name="submit" value="Submit">
+	</form>
+
+</body>
+</html>
